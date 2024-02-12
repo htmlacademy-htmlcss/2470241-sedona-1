@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Ангелина Белова](https://up.htmlacademy.ru/htmlcss-individual/1/user/2470241).
-* Наставник: `Неизвестно`.
+* Наставник: `Владимир Вавщик`(https://htmlacademy.ru/profile/id1610171).
 
 ---
 
