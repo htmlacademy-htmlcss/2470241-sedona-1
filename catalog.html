@@ -110,8 +110,8 @@
           <fieldset class="appointment-form">
             <legend class="appointment-form-title">Стоимость, ₽:</legend>
             <div class="appointment-form-price">
-              <input type="text" name="appointment-price" placeholder="от">
-              <input type="text" name="appointment-price" placeholder="до">
+              <input name="appointment-price" placeholder="от">
+              <input name="appointment-price" placeholder="до">
             </div>
             <input type="range" id="price" name="price" min="0" max="80">
           </fieldset>
@@ -122,22 +122,29 @@
         </form>
       </section>
       <div class="search-apartments">
-        <h2 class="apartments-select">Найдено гостиниц:</h2>
-        <span class="content-number">38</span>
+        <h2 class="apartments-select">Найдено гостиниц: 38</h2>
         <select class="select-control" aria-label="Сортировка">
           <option value="cheap">Сначала дешевые</option>
           <option value="popular">Сначала популярные</option>
           <option value="expensive">Сначала дорогие</option>
         </select>
+        <ul class="view-list">
+          <li class="view-item">
         <button class="button-view">
           <span class="visually-hidden">Показать карточки</span>
         </button>
+          </li>
+          <li class="view-item">
         <button class="button-view">
           <span class="visually-hidden">Показать слайд-шоу</span>
         </button>
+          </li>
+          <li class="view-item">
         <button class="button-view">
           <span class="visually-hidden">Показать список</span>
         </button>
+          </li>
+        </ul>
       </div>
       <ul class="cards-list">
         <li class="cards-item">
@@ -152,13 +159,13 @@
             <button class="button button-secondary">в избранное</button>
           </div>
           <figure>
-            <img class="mark" src="#" alt="звeзда">
-            <img class="mark" src="#" alt="звeзда">
-            <img class="mark" src="#" alt="звeзда">
-            <img class="mark" src="#" alt="звeзда">
+            <img class="mark" src="#" alt="4 звeзды из 5">
+            <img class="mark" src="#" alt="">
+            <img class="mark" src="#" alt="">
+            <img class="mark" src="#" alt="">
           </figure>
-          <div>
-            <span class="rating-view-button">Рейтинг: 8,5</span>
+          <div class="rating">
+            <span class="rating-text">Рейтинг: 8,5</span>
           </div>
         </li>
         <li class="cards-item">
@@ -175,13 +182,13 @@
             </button>
           </div>
           <figure>
-            <img class="mark" src="#" alt="звeзда">
-            <img class="mark" src="#" alt="звeзда">
-            <img class="mark" src="#" alt="звeзда">
-            <img class="mark" src="#" alt="звeзда">
+            <img class="mark" src="#" alt="4 звeзды из 5">
+            <img class="mark" src="#" alt="">
+            <img class="mark" src="#" alt="">
+            <img class="mark" src="#" alt="">
           </figure>
-          <div>
-            <span class="rating-view-button">Рейтинг: 9,2</span>
+          <div class="rating">
+            <span class="rating-text">Рейтинг: 9,2</span>
           </div>
         </li>
         <li class="cards-item">
@@ -196,12 +203,12 @@
             <button class="button button-secondary">в избранное</button>
           </div>
           <figure>
-            <img class="mark" src="#" alt="звeзда">
-            <img class="mark" src="#" alt="звeзда">
-            <img class="mark" src="#" alt="звeзда">
+            <img class="mark" src="#" alt="3 звeзды из 5">
+            <img class="mark" src="#" alt="">
+            <img class="mark" src="#" alt="">
           </figure>
           <div class="rating">
-            <span class="rating-view-button">Рейтинг: 6,9</span>
+            <span class="rating-text">Рейтинг: 6,9</span>
           </div>
         </li>
         <li class="cards-item">
@@ -216,11 +223,11 @@
             <button class="button button-secondary">в избранное</button>
           </div>
           <figure>
-            <img class="mark" src="#" alt="звeзда">
-            <img class="mark" src="#" alt="звeзда">
+            <img class="mark" src="#" alt="2 звeзды из 5">
+            <img class="mark" src="#" alt="">
           </figure>
           <div class="rating">
-            <span class="rating-view-button">Рейтинг: 5,0</span>
+            <span class="rating-text">Рейтинг: 5,0</span>
           </div>
         </li>
       </ul>
@@ -248,14 +255,14 @@
       </nav>
       <section class="newsletter newsletter-theme-dark">
         <h2 class="newsletter-title">Подпишитесь на рассылку</h2>
-        <p>
+        <p class="newsletter-description">
           Только полезная информация и никакого спама, честное бойскаутское!
         </p>
         <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
           <label for="user-email">Email</label>
           <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="user-email" required>
           <button class="button button-secondary button-size-large">
-            <span class="follow">Подписаться</span>
+            Подписаться
           </button>
         </form>
       </section>
