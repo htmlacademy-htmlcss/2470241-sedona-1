@@ -1,0 +1,278 @@
+@font-face {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 400;
+    src: url(../fonts/ptsans-400.woff2) format("woff2");
+    font-diplay: swap;
+  }
+  @font-face {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 700;
+    src: url(../fonts/ptsans-700.woff2) format("woff2");
+    font-display: swap;
+  }
+  body {
+    font-family: "PT Sans", sans-serif;
+    font-size: 22px;
+    line-height: 26px;
+    color: #333333;
+    background-color: #ffffff;
+  }
+  .page-header {
+    color: #000000;
+    background-color: #ffffff;
+  }
+  .navigation-link {
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+    color: inherit;
+    background-color: #ffffff;
+  }
+  .navigation-link-current {
+    text-decoration: none;
+    color: inherit;
+    background-color: #ffffff;
+    text-decoration: underline;
+  }
+  .button {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #756157;
+  }
+  .hero {
+    background-image: url("../images/background/background-1.jpg");
+    background-image: url("../images/arrows.svg");
+    color: #000000;
+    background-color: #ffffff;
+    background-repeat: no-repeat;
+    width: 1200px;
+    height: 485px;
+  }
+  .advantages-heading {
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000000;
+    background-color: #ffffff;
+  }
+  .advantages-text {
+    font-weight: 400;
+    text-align: center;
+    color: #333333;
+    background-color: #ffffff;
+  }
+  .advantages-list {
+    list-style: none;
+    text-align: center;
+  }
+  .advantages-item {
+    width: 400px;
+    height: 385px;
+    color: #ffffff;
+    background-color: #82B3D3;
+  }
+  .advantages-title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    text-transform: uppercase;
+    color: #ffffff;
+    background-color: #82B3D3;
+  }
+  .advantages-description {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    text-transform: none;
+    background-color: #82B3D3;
+  }
+  .advantages-item-square,
+  .advantages-item-tourist {
+    color: #000000;
+    background-color: rgba(131, 179, 211, 0.12);
+  }
+  .advantages-title-square,
+  .advantages-title-tourist {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    text-transform: uppercase;
+    color: #000000;
+    background-color: rgba(131, 179, 211, 0.12);
+
+  }
+  .advantages-description-theme-light {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #000000;
+    background-color: rgba(131, 179, 211, 0.12);
+  }
+  .advantages-item-road {
+    color: #000000;
+    background-color: rgba(131, 179, 211, 0.2);
+  }
+  .advantages-title-road {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    text-transform: uppercase;
+    color: #000000;
+    background-color: rgba(131, 179, 211, 0.2);
+  }
+  .advantages-description-road {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #000000;
+    background-color: rgba(131, 179, 211, 0.2);
+  }
+  .about-heading {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    color: #000000;
+    background-color: #ffffff;
+  }
+  .about-text {
+    text-transform: none;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+    text-align: center;
+    color: #333333;
+    background-color: #ffffff;
+  }
+  .about-list {
+    list-style: none;
+    text-align: center;
+  }
+  .about-item {
+    width: 400px;
+    height: 385px;
+    color: #000000;
+    background-color: rgba(131, 179, 211, 0.12);
+  }
+  .about-title-house {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    text-transform: uppercase;
+    color: #000000;
+    background-color: rgba(131, 179, 211, 0.12);
+  }
+  .about-description-house {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    text-transform: none;
+    color: #333333;
+    background-color: rgba(131, 179, 211, 0.12);
+  }
+  .about-title-food {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    text-transform: uppercase;
+    color: #000000;
+    background-color: #ffffff;
+  }
+  .about-description-food {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    text-transform: none;
+    color: #333333;
+    background-color: #ffffff;
+  }
+  .about-title-present {
+
+
+  }
+ /* Еда */
+
+width: 400px;
+height: 385px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+/* Еда */
+
+width: 230px;
+height: 28px;
+
+/* Headings/Heading 3 */
+font-family: 'PT Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 28px;
+/* identical to box height, or 117% */
+text-align: center;
+text-transform: uppercase;
+
+/* Texts/Texts/basic */
+color: #000000;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+/* Advantages */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 80px 85px;
+gap: 10px;
+
+position: absolute;
+left: 33.33%;
+right: 33.33%;
+top: 0%;
+bottom: 0%;
+
+/* Всегда заказывайте
+топовый фирменный бургер, вы не разочаруетесь! */
+
+width: 230px;
+height: 63px;
+
+/* Texts/Text blocks */
+font-family: 'PT Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 21px;
+/* or 117% */
+text-align: center;
+
+/* Texts/second */
+color: #333333;
+
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+align-self: stretch;
+flex-grow: 0;
