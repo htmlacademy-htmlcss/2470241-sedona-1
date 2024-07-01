@@ -226,53 +226,36 @@ line-height: 28px;
 /* identical to box height, or 117% */
 text-align: center;
 text-transform: uppercase;
-
-/* Texts/Texts/basic */
-color: #000000;
-
-
-/* Inside auto layout */
-flex: none;
-order: 1;
-align-self: stretch;
-flex-grow: 0;
-/* Advantages */
-
-/* Auto layout */
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-padding: 80px 85px;
-gap: 10px;
-
-position: absolute;
-left: 33.33%;
-right: 33.33%;
-top: 0%;
-bottom: 0%;
-
-/* Всегда заказывайте
-топовый фирменный бургер, вы не разочаруетесь! */
-
-width: 230px;
-height: 63px;
-
-/* Texts/Text blocks */
-font-family: 'PT Sans';
-font-style: normal;
-font-weight: 400;
-font-size: 18px;
-line-height: 21px;
-/* or 117% */
-text-align: center;
-
-/* Texts/second */
-color: #333333;
-
-
-/* Inside auto layout */
-flex: none;
-order: 2;
-align-self: stretch;
-flex-grow: 0;
+=======
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/ptsans-400.woff2) format("woff2");
+  font-diplay: swap;
+}
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/ptsans-700.woff2) format("woff2");
+  font-display: swap;
+}
+body {
+  font-family: "PT Sans", sans-serif;
+  font-size: 22px;
+  line-height: 26px;
+  color: #333333;
+  background-color: #ffffff;
+}
+.page-header {
+  color: #000000;
+  background-color: #ffffff;
+}
+.navigation-link {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+  text-align: center;
+  color: inherit;
+  background-color: #ffffff;
+}
