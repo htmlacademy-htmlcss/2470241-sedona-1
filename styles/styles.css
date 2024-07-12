@@ -33,7 +33,6 @@
     background-color: #ffffff;
   }
   .navigation-link-current {
-    text-decoration: none;
     color: inherit;
     background-color: #ffffff;
     text-decoration: underline;
@@ -50,6 +49,13 @@
   }
   .hero {
     background-image: url("../images/background/background-1.jpg");
+    color: #000000;
+    background-color: #ffffff;
+    background-repeat: no-repeat;
+    width: 1200px;
+    height: 485px;
+  }
+  .hero {
     background-image: url("../images/arrows.svg");
     color: #000000;
     background-color: #ffffff;
@@ -199,63 +205,120 @@
     background-color: #ffffff;
   }
   .about-title-present {
-
-
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    text-transform: uppercase;
+    color: #000000;
+    background-color: rgba(131, 179, 211, 0.12);
   }
- /* Еда */
+  .about-description-present {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    text-transform: none;
+    color: #333333;
+    background-color: rgba(131, 179, 211, 0.12);
+  }
+  .appointment {
+    text-align: center;
+    background-color: #FFFFFF;
+    color: #000000;
+  }
+  .appointment-title {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    text-transform: uppercase;
+    color: #000000;
+    background-color: #FFFFFF;
+  }
+  .appointment-description {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+    text-transform: none;
+    color: #333333;
+    background-color: #FFFFFF;
+  }
+  .button-size-large {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 36px;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #756157;
+  }
+  .newsletter {
+    background-image: url("../images/background/background-2.jpg");
+    width: 1200px;
+    height: 414.86px;
+    color: #000000;
+    background-color: #ffffff;
+    background-repeat: no-repeat;
+    text-align: center;
+  }
+  .newsletter-title {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background-color: #00000000;
+  }
+  .newsletter-description {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+    text-transform: none;
+    color: #FFFFFF;
+    background-color: #00000000;
+    }
+  /* Только полезная информация и никакого спама, честное бойскаутское! */
 
-width: 400px;
-height: 385px;
+width: 475px;
+height: 52.51px;
+
+/* Texts/Text basic */
+font-family: 'PT Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 22px;
+line-height: 26px;
+/* or 118% */
+text-align: center;
+
+/* Texts/background/deafault */
+color: #FFFFFF;
 
 
 /* Inside auto layout */
 flex: none;
 order: 1;
 flex-grow: 0;
-/* Еда */
 
-width: 230px;
-height: 28px;
+/* Подпишитесь на рассылку */
 
-/* Headings/Heading 3 */
+width: 404px;
+height: 36.35px;
+
+/* Headings/Heading 2 */
 font-family: 'PT Sans';
 font-style: normal;
 font-weight: 700;
-font-size: 24px;
-line-height: 28px;
-/* identical to box height, or 117% */
-text-align: center;
+font-size: 30px;
+line-height: 36px;
+/* or 120% */
 text-transform: uppercase;
-=======
-  font-family: "PT Sans";
-  font-style: normal;
-  font-weight: 400;
-  src: url(../fonts/ptsans-400.woff2) format("woff2");
-  font-diplay: swap;
-}
-@font-face {
-  font-family: "PT Sans";
-  font-style: normal;
-  font-weight: 400;
-  src: url(../fonts/ptsans-700.woff2) format("woff2");
-  font-display: swap;
-}
-body {
-  font-family: "PT Sans", sans-serif;
-  font-size: 22px;
-  line-height: 26px;
-  color: #333333;
-  background-color: #ffffff;
-}
-.page-header {
-  color: #000000;
-  background-color: #ffffff;
-}
-.navigation-link {
-  font-size: 20px;
-  line-height: 24px;
-  font-weight: 700;
-  text-align: center;
-  color: inherit;
-  background-color: #ffffff;
-}
+
+/* Texts/background/deafault */
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
