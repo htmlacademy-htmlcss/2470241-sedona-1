@@ -165,6 +165,7 @@
   .about-list {
     list-style: none;
     text-align: center;
+    display: flex;
   }
   .about-item {
     width: 400px;
@@ -276,49 +277,47 @@
     text-transform: none;
     color: #FFFFFF;
     background-color: #00000000;
-    }
-  /* Только полезная информация и никакого спама, честное бойскаутское! */
-
-width: 475px;
-height: 52.51px;
-
-/* Texts/Text basic */
-font-family: 'PT Sans';
-font-style: normal;
-font-weight: 400;
-font-size: 22px;
-line-height: 26px;
-/* or 118% */
-text-align: center;
-
-/* Texts/background/deafault */
-color: #FFFFFF;
-
-
-/* Inside auto layout */
-flex: none;
-order: 1;
-flex-grow: 0;
-
-/* Подпишитесь на рассылку */
-
-width: 404px;
-height: 36.35px;
-
-/* Headings/Heading 2 */
-font-family: 'PT Sans';
-font-style: normal;
-font-weight: 700;
-font-size: 30px;
-line-height: 36px;
-/* or 120% */
-text-transform: uppercase;
-
-/* Texts/background/deafault */
-color: #FFFFFF;
-
-
-/* Inside auto layout */
-flex: none;
-order: 0;
-flex-grow: 0;
+  }
+  .button-secondary {
+    font-size: 20px;
+    line-height: 36px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #82B3D3;
+  }
+  .page-footer {
+    color: #FFFFFF;
+  }
+  .page-footer,
+  .copyright {
+   color: #000000;
+   text-align: right;
+   text-decoration: none;
+  }
+  .footer-social-list {
+   background-color: #FFFFFF;
+   display: flex;
+   list-style: none;
+   align-items: center;
+   width: 24px;
+   height: 14px;
+  }
+  .footer-social-item {
+    color: #83B3D3;
+    background-color: #FFFFFF;
+  }
+  .footer-social-link a {
+    background-color: #FFFFFF;
+    color: #83B3D3;
+    text-decoration: none;
+  }
+  .contacts-phone {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
