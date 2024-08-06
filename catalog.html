@@ -3,11 +3,13 @@
   <head>
     <meta charset="utf-8">
     <title>Каталог</title>
+    <link rel="stylesheet" href="styles/catalog.css">
   </head>
   <body>
+    <div class="container">
     <header class="page-header">
       <a class="navigation-logo" href="index.html">
-        <img class="page-header-logo" alt="Логотип сайта Седона." src="#">
+        <img class="page-header-logo" src="images/logo-header.svg" width="140" height="70" alt="Логотип Седона.">
       </a>
       <nav class="navigation">
         <ul class="navigation-list">
@@ -39,7 +41,8 @@
         <a class="button" href="#">Хочу сюда!</a>
       </nav>
     </header>
-    <main class="main-inner">
+    <main class="main-container main-inner">
+      <div class="page-container">
       <section class="inner-container">
         <h1 class="inner-header-title">Гостиницы Седоны</h1>
         <ul class="breadcrumbs">
@@ -129,7 +132,7 @@
         </select>
         <ul class="view-list">
           <li class="view-item">
-        <button class="button-view">
+        <button class="button-view-cards">
           <span class="visually-hidden">Показать карточки</span>
         </button>
           </li>
@@ -265,6 +268,7 @@
           </button>
         </form>
       </section>
+      </div>
     </main>
     <footer class="page-footer">
       <ul class="footer-social-list">
@@ -289,5 +293,6 @@
         <img class="logo-htmlacademy" src="images/logo-footer.svg" width="115" height="33" alt="Логотип html Academy.">
       </a>
     </footer>
+    </div>
   </body>
 </html>
