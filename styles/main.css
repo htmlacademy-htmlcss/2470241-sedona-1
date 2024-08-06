@@ -1,27 +1,52 @@
 @font-face {
+    src: url(../fonts/ptsans-400.woff2) format("woff2");
     font-family: "PT Sans";
     font-style: normal;
     font-weight: 400;
-    src: url(../fonts/ptsans-400.woff2) format("woff2");
     font-diplay: swap;
   }
   @font-face {
+    src: url(../fonts/ptsans-700.woff2) format("woff2");
     font-family: "PT Sans";
     font-style: normal;
     font-weight: 700;
-    src: url(../fonts/ptsans-700.woff2) format("woff2");
     font-display: swap;
   }
+  html {
+    height: 100%;
+  }
   body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
     font-family: "PT Sans", sans-serif;
     font-size: 22px;
     line-height: 26px;
     color: #333333;
-    background-color: #ffffff;
+  }
+  .container {
+    margin: 0 auto;
+    width: 960px;
   }
   .page-header {
     color: #000000;
     background-color: #ffffff;
+  }
+  .navigation {
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
+  }
+  .navigation-list {
+    width: 625px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  .navigation-user {
+    max-width: 315px;
+    margin-left: auto;
   }
   .navigation-link {
     font-size: 20px;
@@ -30,38 +55,38 @@
     text-align: center;
     text-decoration: none;
     color: inherit;
-    background-color: #ffffff;
   }
   .navigation-link-current {
     color: inherit;
-    background-color: #ffffff;
-    text-decoration: underline;
+    text-decoration: none;
   }
   .button {
+    font-weight: 700;
     font-size: 16px;
     line-height: 20px;
-    font-weight: 700;
     text-align: center;
     text-transform: uppercase;
     text-decoration: none;
     color: #ffffff;
     background-color: #756157;
   }
-  .hero {
-    background-image: url("../images/background/background-1.jpg");
-    color: #000000;
-    background-color: #ffffff;
-    background-repeat: no-repeat;
+  .main-container {
+    flex-grow: 1;
+  }
+  .page-container {
     width: 1200px;
-    height: 485px;
+    margin: 0 auto;
   }
   .hero {
-    background-image: url("../images/arrows.svg");
+    background-image: url("../images/background/background-1.jpg"), url("../images/arrows.svg");
+    background-repeat: no-repeat;
+    background-position: left bottom, center;
     color: #000000;
     background-color: #ffffff;
-    background-repeat: no-repeat;
-    width: 1200px;
-    height: 485px;
+  }
+  .logo {
+    display: block;
+    margin: 0 auto;
   }
   .advantages-heading {
     font-size: 30px;
@@ -70,21 +95,24 @@
     text-align: center;
     text-transform: uppercase;
     color: #000000;
-    background-color: #ffffff;
   }
   .advantages-text {
     font-weight: 400;
     text-align: center;
     color: #333333;
-    background-color: #ffffff;
   }
   .advantages-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
     list-style: none;
     text-align: center;
   }
   .advantages-item {
+    min-height: 385px;
     width: 400px;
-    height: 385px;
     color: #ffffff;
     background-color: #82B3D3;
   }
@@ -94,14 +122,12 @@
     line-height: 28px;
     text-transform: uppercase;
     color: #ffffff;
-    background-color: #82B3D3;
   }
   .advantages-description {
     font-weight: 400;
     font-size: 18px;
     line-height: 21px;
     text-transform: none;
-    background-color: #82B3D3;
   }
   .advantages-item-square,
   .advantages-item-tourist {
@@ -115,7 +141,6 @@
     line-height: 28px;
     text-transform: uppercase;
     color: #000000;
-    background-color: rgba(131, 179, 211, 0.12);
 
   }
   .advantages-description-theme-light {
@@ -123,7 +148,6 @@
     font-size: 18px;
     line-height: 21px;
     color: #000000;
-    background-color: rgba(131, 179, 211, 0.12);
   }
   .advantages-item-road {
     color: #000000;
@@ -135,14 +159,12 @@
     line-height: 28px;
     text-transform: uppercase;
     color: #000000;
-    background-color: rgba(131, 179, 211, 0.2);
   }
   .advantages-description-road {
     font-weight: 400;
     font-size: 18px;
     line-height: 21px;
     color: #000000;
-    background-color: rgba(131, 179, 211, 0.2);
   }
   .about-heading {
     text-align: center;
@@ -151,7 +173,6 @@
     font-size: 30px;
     line-height: 36px;
     color: #000000;
-    background-color: #ffffff;
   }
   .about-text {
     text-transform: none;
@@ -160,7 +181,6 @@
     line-height: 26px;
     text-align: center;
     color: #333333;
-    background-color: #ffffff;
   }
   .about-list {
     list-style: none;
@@ -168,58 +188,43 @@
     display: flex;
   }
   .about-item {
-    width: 400px;
-    height: 385px;
+    min-height: 385px;
     color: #000000;
     background-color: rgba(131, 179, 211, 0.12);
   }
-  .about-title-house {
+  .about-item-food {
+    min-height: 385px;
+    color: #000000;
+    background-color: #FFFFFF;
+  }
+  .about-house {
+   background-image: url("../images/house.svg");
+   background-repeat: no-repeat;
+   color: #82B3D3;
+  }
+  .about-food {
+  background-image: url("../images/burger.svg");
+  background-repeat: no-repeat;
+  color: #82B3D3;
+  }
+  .about-present {
+    background-image: url("../images/present.svg");
+    background-repeat: no-repeat;
+    color: #82B3D3;
+  }
+  .about-title {
     font-weight: 700;
     font-size: 24px;
     line-height: 28px;
     text-transform: uppercase;
     color: #000000;
-    background-color: rgba(131, 179, 211, 0.12);
   }
-  .about-description-house {
+  .about-description {
     font-weight: 400;
     font-size: 18px;
     line-height: 21px;
     text-transform: none;
     color: #333333;
-    background-color: rgba(131, 179, 211, 0.12);
-  }
-  .about-title-food {
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 28px;
-    text-transform: uppercase;
-    color: #000000;
-    background-color: #ffffff;
-  }
-  .about-description-food {
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 21px;
-    text-transform: none;
-    color: #333333;
-    background-color: #ffffff;
-  }
-  .about-title-present {
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 28px;
-    text-transform: uppercase;
-    color: #000000;
-    background-color: rgba(131, 179, 211, 0.12);
-  }
-  .about-description-present {
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 21px;
-    text-transform: none;
-    color: #333333;
-    background-color: rgba(131, 179, 211, 0.12);
   }
   .appointment {
     text-align: center;
@@ -255,8 +260,6 @@
   }
   .newsletter {
     background-image: url("../images/background/background-2.jpg");
-    width: 1200px;
-    height: 414.86px;
     color: #000000;
     background-color: #ffffff;
     background-repeat: no-repeat;
@@ -314,6 +317,7 @@
   }
   .contacts-phone {
     font-style: normal;
+    color: #000000;
     font-weight: 400;
     font-size: 40px;
     line-height: 40px;
