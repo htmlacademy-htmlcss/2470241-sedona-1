@@ -10,8 +10,7 @@
   .logo {
     display: block;
     margin: 0 auto;
-    padding-top: 51px;
-    padding-bottom: 82px;
+    padding: 51px 0 82px 0;
   }
   .advantages {
     display: flex;
@@ -21,11 +20,8 @@
   }
   .advantages-heading {
     width: 620px;
-    margin: 0;
-    padding-top: 69px;
-    margin-bottom: 25px;
-    padding-left: 290px;
-    padding-right: 290px;
+    padding: 69px 290px 0 290px;
+    margin: 0 0 25px 0;
     font-size: 30px;
     line-height: 36px;
     font-weight: 700;
@@ -35,8 +31,7 @@
   }
   .advantages-text {
     width: 651px;
-    margin: 0;
-    margin-bottom: 69px;
+    margin: 0 0 69px 0;
     padding: 0 274.5px;
     font-weight: 400;
     text-align: center;
@@ -65,8 +60,7 @@
     grid-template-columns: 1fr minmax(auto, 400px);
   }
   .advantages-title {
-    margin: 0;
-    margin-bottom: 62px;
+    margin: 0 0 62px 0;
     padding-top: 102px;
     padding-right: 112.5px;
     padding-left: 112.5px;
@@ -77,8 +71,7 @@
     color: #ffffff;
   }
   .advantages-description {
-    margin: 0;
-    margin-bottom: 102px;
+    margin: 0 0 102px 0;
     padding-left: 85px;
     padding-right: 85px;
     font-weight: 400;
@@ -93,8 +86,7 @@
   }
   .advantages-title-square,
   .advantages-title-tourist {
-    margin: 0;
-    margin-bottom: 62px;
+    margin: 0 0 62px 0;
     padding-top: 112.5px;
     padding-right: 112.5px;
     padding-left: 112.5px;
@@ -119,8 +111,7 @@
     background-color: rgba(131, 179, 211, 0.2);
   }
   .advantages-title-road {
-    margin: 0;
-    margin-bottom: 62px;
+    margin: 0 0 62px 0;
     padding-top: 112.5px;
     padding-right: 112.5px;
     padding-left: 112.5px;
@@ -139,18 +130,16 @@
     line-height: 21px;
     color: #000000;
   }
-    .about {
+  .about {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
   }
   .about-heading {
-    margin: 0;
-    padding: 0;
-    padding-top: 64px;
+    padding: 64px 0 0 0;
     text-transform: uppercase;
-    margin-bottom: 20px;
+    margin: 0 0 20px 0;
     width: 505px;
     padding-left: 347.5px;
     padding-right: 347.5px;
@@ -204,9 +193,8 @@
     color: #82B3D3;
   }
   .about-title {
-    margin: 0;
     padding: 0;
-    margin-bottom: 30px;
+    margin: 0 0 30px 0;
     font-weight: 700;
     font-size: 24px;
     line-height: 28px;
