@@ -180,16 +180,19 @@
   .about-house {
    background-image: url("../images/house.svg");
    background-repeat: no-repeat;
+   background-position: left 163px top 81px;
    color: #82B3D3;
   }
   .about-food {
   background-image: url("../images/burger.svg");
   background-repeat: no-repeat;
+  background-position: left 163px top 81px;
   color: #82B3D3;
   }
   .about-present {
     background-image: url("../images/present.svg");
     background-repeat: no-repeat;
+    background-position: left 163px top 81px;
     color: #82B3D3;
   }
   .about-title {
@@ -238,20 +241,6 @@
     text-transform: none;
     color: #333333;
     background-color: #FFFFFF;
-  }
-  .button-size-large {
-    display: inline-block;
-    padding: 8px 50px;
-    margin: 0;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 36px;
-    border: none;
-    text-align: center;
-    text-transform: uppercase;
-    text-decoration: none;
-    color: #ffffff;
-    background-color: #756157;
   }
   .newsletter {
     display: flex;

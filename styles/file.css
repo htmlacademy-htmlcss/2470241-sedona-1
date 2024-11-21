@@ -35,7 +35,7 @@ body {
 }
 .page-header {
   position: relative;
-  padding: 14px 0 14px 254px;
+  padding: 14px 70px 14px 254px;
   display: flex;
   color: #000000;
   background-color: #ffffff;
@@ -86,11 +86,12 @@ body {
 .navigation-link-current::before {
   position: absolute;
   content: "";
-  border: 2px solid #756257;
+  height: 2px;
   width: 68px;
   left: 50%;
   margin-left: -34px;
-  bottom: -22px;
+  bottom: -21px;
+  background-color: #756257;
 }
 .navigation-button-search {
   background-color: transparent;
@@ -124,7 +125,6 @@ body {
   padding: 8px 34px;
   border: none;
   border-radius: 4px;
-  margin-right: 70px;
   cursor: pointer;
   font-weight: 700;
   font-size: 16px;
@@ -152,12 +152,28 @@ body {
   width: 1200px;
   margin: 0 auto;
 }
+.button-size-large {
+  padding: 8px 50px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1,8;
+  background-color: #756157;
+}
 .button-secondary {
   font-size: 20px;
   line-height: 36px;
-  text-transform: uppercase;
-  text-decoration: none;
-  color: #ffffff;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  background-color: #82B3D3;
+}
+.button-secondary:hover {
+  background-color: #68A2CA;
+}
+.button-secondary:focus {
+  background-color: #68A2CA;
+}
+.button-size-large:active {
+  color: #FFFFFF4D;
   background-color: #82B3D3;
 }
 .page-footer {
