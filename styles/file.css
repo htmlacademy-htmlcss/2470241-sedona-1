@@ -156,7 +156,7 @@ body {
   padding: 8px 50px;
   font-weight: 700;
   font-size: 20px;
-  line-height: 1,8;
+  line-height: 1.8;
   background-color: #756157;
 }
 .button-secondary {
@@ -219,26 +219,14 @@ body {
   background-position: center;
 
 }
-.footer-social-vk {
-  background-image: url(../images/social/social-3.svg);
-  background-size: 24px 14px;
-}
-.footer-social-vk:hover {
+.footer-social-link .social-icon:hover {
   fill: #68A2CA;
 }
-.footer-social-vk:focus {
+.footer-social-link .social-icon:focus {
   fill: #68A2CA;
 }
-.footer-social-vk:active {
-  color: #68A2CA4D;
-}
-.footer-social-telegram {
-  background-image: url(../images/social/social-1.svg);
-  background-size: 18px 15px;
-}
-.footer-social-youtube {
-  background-image: url(../images/social/social-2.svg);
-  background-size: 22px 17px;
+.footer-social-link .social-icon:active {
+  fill: #68A2CA4D;
 }
 .contacts-phone {
   cursor: pointer;
@@ -263,12 +251,12 @@ body {
 .contacts-phone:active {
   color: #7561574D;
 }
-.copyright:hover {
-  color: #756157;
+.copyright .logo-icon:hover {
+  fill: #756157;
 }
-.copyright:focus {
-  color: #756157;
+.copyright .logo-icon:focus {
+  fill: #756157;
 }
-.copyright:active {
-  color: #7561574D;
+.copyright .logo-icon:active {
+  fill: #7561574D;
 }
