@@ -159,6 +159,17 @@ body {
   line-height: 1.8;
   background-color: #756157;
 }
+.newsletter-form {
+  display: flex;
+  justify-content: center;
+}
+.user-email {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+  background-color: #F2F2F2;
+}
 .button-secondary {
   font-size: 20px;
   line-height: 36px;
@@ -204,20 +215,20 @@ body {
  flex-wrap: wrap;
  list-style: none;
  justify-content: center;
-}
-.footer-social-item {
-  min-width: 47.33px;
-  min-height: 40px;
+ align-items: center;
+ column-gap: 26px;
 }
 .footer-social-link {
   display: block;
   cursor: pointer;
-  height: 40px;
   background-color: #ffffff;
   text-decoration: none;
   background-repeat: no-repeat;
   background-position: center;
 
+}
+.social-icon {
+  fill: #83B3D3;
 }
 .footer-social-link .social-icon:hover {
   fill: #68A2CA;
@@ -227,6 +238,9 @@ body {
 }
 .footer-social-link .social-icon:active {
   fill: #68A2CA4D;
+}
+.footer-social-link .social-icon:disabled {
+  fill: #83B3D3;
 }
 .contacts-phone {
   cursor: pointer;

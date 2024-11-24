@@ -365,17 +365,6 @@ figure {
   text-transform: none;
   color: #333333;;
 }
-.newsletter-form {
-  width: 684px;
-  padding: 0 258px;
-}
-.user-email {
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 24px;
-  color: #000000;
-  background-color: #F2F2F2;
-}
 .button-size-large {
   font-size: 20px;
   line-height: 36px;

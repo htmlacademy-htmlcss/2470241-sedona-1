@@ -180,19 +180,19 @@
   .about-house {
    background-image: url("../images/house.svg");
    background-repeat: no-repeat;
-   background-position: left 163px top 81px;
+   background-position: 163px 81px;
    color: #82B3D3;
   }
   .about-food {
   background-image: url("../images/burger.svg");
   background-repeat: no-repeat;
-  background-position: left 163px top 81px;
+  background-position: 163px 81px;
   color: #82B3D3;
   }
   .about-present {
     background-image: url("../images/present.svg");
     background-repeat: no-repeat;
-    background-position: left 163px top 81px;
+    background-position: 163px 81px;
     color: #82B3D3;
   }
   .about-title {
@@ -265,8 +265,8 @@
     background-color: #00000000;
   }
   .newsletter-description {
-    margin: 0;
-    margin-bottom: 54px;
+    max-width: 475px;
+    margin: 0 0 54px 0;
     padding-top: 20px;
     font-weight: 400;
     font-size: 22px;
@@ -274,17 +274,6 @@
     text-transform: none;
     color: #FFFFFF;
     background-color: #00000000;
-  }
-  .newsletter-form {
-    width: 684px;
-    padding: 0 258px;
-  }
-  .user-email {
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 24px;
-    color: #000000;
-    background-color: #F2F2F2;
   }
   .button-secondary {
     font-size: 20px;
