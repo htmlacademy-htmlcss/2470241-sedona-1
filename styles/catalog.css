@@ -121,28 +121,6 @@
   grid-column: 3 / 4;
   padding-top: 56px;
 }
-.button-secondary {
-  font-weight: 700;
-  padding: 8px 20px;
-  font-size: 16px;
-  line-height: 20px;
-  text-align: center;
-  text-transform: uppercase;
-  text-decoration: none;
-  color: #FFFFFF;
-  background-color: #82B3D3;
-}
-.button-third {
-  padding: 8px 57.5px;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 20px;
-  text-align: center;
-  text-transform: uppercase;
-  text-decoration: none;
-  color: #FFFFFF;
-  background-color: #00000000;
-}
 .search-apartments {
   display: flex;
   justify-content: center;

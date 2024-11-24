@@ -163,8 +163,12 @@ body {
   display: flex;
   justify-content: center;
 }
-.user-email {
+.field {
+  border: none;
+  width: 452px;
   font-weight: 400;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
   font-size: 18px;
   line-height: 24px;
   color: #000000;
@@ -173,6 +177,7 @@ body {
 .button-secondary {
   font-size: 20px;
   line-height: 36px;
+  width: 232px;
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
   background-color: #82B3D3;
@@ -183,9 +188,37 @@ body {
 .button-secondary:focus {
   background-color: #68A2CA;
 }
-.button-size-large:active {
+.button-secondary:active {
   color: #FFFFFF4D;
   background-color: #82B3D3;
+}
+.button-secondary {
+  font-weight: 700;
+  padding: 8px 50px;
+  font-size: 16px;
+  line-height: 20px;
+}
+.button-third {
+  padding: 8px 57.5px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  width: 191px;
+  color: #FFFFFF;
+  background-color: transparent;
+}
+.button-third:hover {
+  color: #FFFFFF;
+  background-color: transparent;
+}
+.button-third:focus {
+  border: 3px solid #83B3D3;
+  color: #FFFFFF;
+  background-color: transparent;
+}
+.button-third:active {
+  color: #FFFFFF4D;
+  background-color: transparent;
 }
 .page-footer {
   color: #FFFFFF;
