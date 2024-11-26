@@ -1,7 +1,6 @@
 .inner-container {
   background-image: url("../images/background/background-3.jpg");
   background-repeat: no-repeat;
-  object-fit: fill;
   background-size: cover;
   width: 1200px;
   padding: 35px 70px 70px;

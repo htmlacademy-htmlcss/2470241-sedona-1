@@ -122,6 +122,7 @@ body {
   }
 .button {
   display: inline-block;
+  font-family: inherit;
   padding: 8px 34px;
   border: none;
   border-radius: 4px;
@@ -152,18 +153,14 @@ body {
   width: 1200px;
   margin: 0 auto;
 }
-.button-size-large {
-  padding: 8px 50px;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 1.8;
-  background-color: #756157;
-}
 .newsletter-form {
   display: flex;
   justify-content: center;
 }
 .field {
+  height: 52px;
+  padding: 0 20px 0;
+  box-sizing: border-box;
   border: none;
   width: 452px;
   font-weight: 400;
@@ -174,10 +171,13 @@ body {
   color: #000000;
   background-color: #F2F2F2;
 }
+.field::placeholder {
+  color: rgb(0, 0, 0, 0.6);
+}
 .button-secondary {
   font-size: 20px;
   line-height: 36px;
-  width: 232px;
+  min-width: 232px;
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
   background-color: #82B3D3;
@@ -191,6 +191,12 @@ body {
 .button-secondary:active {
   color: #FFFFFF4D;
   background-color: #82B3D3;
+}
+.button-size-large {
+  padding: 8px 50px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.8;
 }
 .button-secondary {
   font-weight: 700;
