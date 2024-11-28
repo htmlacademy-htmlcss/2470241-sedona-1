@@ -60,6 +60,7 @@
     grid-template-columns: 1fr minmax(auto, 400px);
   }
   .advantages-title {
+    position: relative;
     margin: 0 0 62px 0;
     padding-top: 102px;
     padding-right: 112.5px;
@@ -69,6 +70,15 @@
     line-height: 28px;
     text-transform: uppercase;
     color: #ffffff;
+  }
+  .advantages-title::before {
+    position: absolute;
+    content: "";
+    height: 2px;
+    width: 60px;
+    left: 170px;
+    bottom: -28px;
+    background-color: rgba(255, 255, 250, 0.300);
   }
   .advantages-description {
     margin: 0 0 102px 0;
@@ -86,6 +96,7 @@
   }
   .advantages-title-square,
   .advantages-title-tourist {
+    position: relative;
     margin: 0 0 62px 0;
     padding-top: 112.5px;
     padding-right: 112.5px;
@@ -96,6 +107,24 @@
     text-transform: uppercase;
     color: #000000;
 
+  }
+  .advantages-title-square::before {
+    position: absolute;
+    content: "";
+    height: 2px;
+    width: 60px;
+    left: 170px;
+    bottom: -28px;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  .advantages-title-tourist::before {
+    position: absolute;
+    content: "";
+    height: 2px;
+    width: 60px;
+    left: 170px;
+    bottom: -28px;
+    background-color: rgba(0, 0, 0, 0.3);
   }
   .advantages-description-theme-light {
     margin-bottom: 112.5px;
@@ -111,6 +140,7 @@
     background-color: rgba(131, 179, 211, 0.2);
   }
   .advantages-title-road {
+    position: relative;
     margin: 0 0 62px 0;
     padding-top: 112.5px;
     padding-right: 112.5px;
@@ -120,6 +150,15 @@
     line-height: 28px;
     text-transform: uppercase;
     color: #000000;
+  }
+  .advantages-title-road::before {
+    position: absolute;
+    content: "";
+    height: 2px;
+    width: 60px;
+    left: 170px;
+    bottom: -28px;
+    background-color: rgba(0, 0, 0, 0.3);
   }
   .advantages-description-road {
     margin-bottom: 112.5px;
