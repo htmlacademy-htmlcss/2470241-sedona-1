@@ -119,8 +119,14 @@
           <fieldset class="appointment-form">
             <legend class="appointment-form-title">Стоимость, ₽:</legend>
             <div class="appointment-form-price">
-              <input name="appointment-price" placeholder="от">
-              <input name="appointment-price" placeholder="до">
+              <label class="price-label">
+                <span class="from">от</span>
+              <input name="appointment-price" class="price-input">
+              </label>
+              <label class="price-label">
+              <span class="before">до</span>
+              <input name="appointment-price" class="price-input-before">
+              </label>
             </div>
             <input type="range" id="price" name="price" min="0" max="80">
           </fieldset>

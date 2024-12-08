@@ -24,16 +24,17 @@
   padding: 0;
   color: #FFFFFF;
 }
+.breadcrumbs-item {
+  position: relative;
+}
 .breadcrumbs li:not(:last-child)::before {
   position: absolute;
   content: "";
-  right: 0;
-  width: 0;
-  height: 0;
-  border-top: 5px solid transparent; /* Верхняя граница прозрачная */
-  border-bottom: 5px solid transparent; /* Нижняя граница прозрачная */
-  border-left: 10px solid #fff; /* Левая граница цветная, создаёт стрелку */
-  margin-left: 10px;
+  background-image: url(../images/breadcrumbs/breadcrumbs-2.svg);
+  right: -14px;
+  top: 5px;
+  width: 8px;
+  height: 20px;
 }
 .breadcrumbs-link {
   color: inherit;
@@ -43,7 +44,6 @@
   display: inline-block;
   background-image: url(../images/breadcrumbs/breadcrumbs-1.svg);
   background-repeat: no-repeat;
-  background-size: 12px 12px;
   width: 12px;
   height: 12px;
 }
@@ -115,9 +115,44 @@
   padding: 0;
   font-weight: 700;
   font-size: 20px;
-  line-height: 24px;
-  text-transform: capitalize;
+  line-height: 1.2;
   color: #FFFFFF;
+}
+.appointment-form-price {
+  display: inline-flex;
+  column-gap: 2px;
+  padding-top: 32px;
+}
+.price-label {
+  display: inline-flex;
+  align-items: center;
+  background-color: #F2F2F2;
+  justify-content: flex-end;
+}
+.appointment-form-price span {
+  position: absolute;
+  font-size: 18px;
+  line-height: 1.2;
+  background-color: #F2F2F2;
+  padding-right: 20px;
+  color: rgba(255, 255, 255, 0.3);
+}
+.price-input {
+  width: 143px;
+  height: 48px;
+  border: 1px solid #ccc;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+.price-input:hover {
+  background-color: #E6E6E6;
+}
+.price-input-before {
+  width: 143px;
+  height: 48px;
+  border: 1px solid #ccc;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
 }
 .appointment-price {
   padding: 0;
@@ -132,34 +167,6 @@
 .button-price {
   grid-column: 2 / 3;
   padding-top: 56px;
-}
-.button-secondary {
-  font-weight: 700;
-  padding: 8px 50px;
-  font-size: 16px;
-  line-height: 20px;
-}
-.button-third {
-  padding: 8px 57.5px;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 20px;
-  width: 191px;
-  color: #FFFFFF;
-  background-color: transparent;
-}
-.button-third:hover {
-  color: #FFFFFF;
-  background-color: transparent;
-}
-.button-third:focus {
-  border: 3px solid #83B3D3;
-  color: #FFFFFF;
-  background-color: transparent;
-}
-.button-third:active {
-  color: #FFFFFF4D;
-  background-color: transparent;
 }
 .apartments {
   padding: 50px 70px 60px 70px;
