@@ -166,6 +166,10 @@ body {
   color: #FFFFFF4D;
   background-color: #756157;
 }
+.button:disabled {
+  color: #FFFFFF;
+  background-color: #E5E5E5;
+}
 .main-container {
   flex-grow: 1;
 }
@@ -188,6 +192,10 @@ body {
 .button-secondary:active {
   color: #FFFFFF4D;
   background-color: #82B3D3;
+}
+.button-secondary:disabled {
+  color: #FFFFFF;
+  background-color: #E5E5E5;
 }
 .button-size-large {
   padding: 8px 50px;
@@ -217,14 +225,17 @@ body {
   color: #FFFFFF4D;
   background-color: transparent;
 }
+.button-third:disabled {
+  color: #FFFFFF;
+  background-color: #E5E5E5;
+}
 .button-secondary {
   font-weight: 700;
   padding: 8px 50px;
   font-size: 16px;
   line-height: 20px;
 }
-.newsletter,
-.button-secondary {
+.newsletter .button-secondary {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
 }
