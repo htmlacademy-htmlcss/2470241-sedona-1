@@ -325,3 +325,106 @@
     color: #ffffff;
     background-color: #82B3D3;
   }
+  .modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.8);
+  }
+  .modal {
+    position: relative;
+    margin: auto;
+    padding: 64px 70px;
+    background-color: #FFFFFF;
+  }
+.modal-auth {
+  width: 577px;
+  border-radius: 30px;
+}
+.modal-close-button {
+  position: absolute;
+  padding: 0;
+  top: 64px;
+  right: 52px;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background-color: #F2F2F2;
+  border: none;
+  background-image: url(../images/modal-window/close.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+.modal-close-button:hover {
+  background-color: #E6E6E6;
+}
+.modal-close-button:focus {
+  border: 3px solid #83B3D3;
+  background-color: #E6E6E6;
+}
+.modal-close-button:focus-visible {
+  outline: none;
+  border: 3px solid #83B3D3;
+  background-color: #E6E6E6;
+}
+.modal-close-button:active {
+  border: none;
+  opacity: 0.3;
+}
+.modal-title {
+  margin: 0 0 64px;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 1.2;
+  color: #000000;
+  text-transform: uppercase;
+}
+.auth-form .field-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  margin-bottom: 4px;
+}
+.auth-form .check {
+  min-width: 440px;
+  min-height: 48px;
+}
+.message {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.3125;
+  color: #FF5757;
+}
+.auth-form .field-group-second {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  margin-bottom: 4px;
+}
+.message-room {
+  font-weight: 400;
+  line-height: 1.3125;
+  font-size: 16px;
+  color: #333333;
+}
+.button-search {
+  border: none;
+    height: 60px;
+    cursor: pointer;
+    min-width: 577px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 20px;
+    line-height: 1.2;
+    border-radius: 10px;
+    color: #FFFFFF;
+    background-color: #83B3D3;
+}

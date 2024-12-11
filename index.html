@@ -182,5 +182,45 @@
       </div>
     </footer>
     </div>
+    <div class="modal-container">
+      <div class="modal modal-auth">
+      <button class="modal-close-button">
+      <span class="visually-hidden">Закрыть</span>
+      </button>
+      <section class="modal-content">
+        <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+      </section>
+      <form class="auth-form" action="https://echo.htmlacademy.ru/" method="get">
+        <p class="field-group">
+        <label for="check-in">Дата заезда:</label>
+        <input class="auth-form-field check"  type="date" id="check-in" value="" name="check-in">
+        </p>
+        <span class="message">Мы не можем отправить вас в прошлое.</span>
+        <p class="field-group-second">
+          <label for="check-out">Дата выезда:</label>
+          <input class="auth-form-field check"  type="date" id="check-out" value="" name="check-out">
+          </p>
+          <span class="message-room">На эти даты есть свободные номера. Пока есть.</span>
+          <div class="quantity">
+          <p class="quantity-group">
+            <label for="adults">Взрослые:</label>
+            <button class="button-minus">-</button>
+            <input class="form-input" type="number" id="adults" value="2" min="1" />
+            <button class="button-plus">+</button>
+          </p>
+          <p class="quantity-group">
+            <label for="kids">Дети:</label>
+          <button class="info">
+            <span class="visually-hidden">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+          </button>
+          <button class="button-minus">-</button>
+          <input class="form-input" type="number" id="adults" value="2" min="1" />
+          <button class="button-plus">+</button>
+        </p>
+          </div>
+          <button class="button-search" type="submit">Найти</button>
+      </form>
+      </div>
+    </div>
   </body>
 </html>
