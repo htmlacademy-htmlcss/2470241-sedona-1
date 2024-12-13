@@ -316,6 +316,7 @@
   }
   .modal-container {
   position: fixed;
+
   top: 0;
   left: 0;
   display: flex;
@@ -323,7 +324,7 @@
   height: 100%;
   background-color: rgba(255, 255, 255, 0.8);
   }
-  .modal-container-close {
+ .modal-container .modal-container-close {
     display: none;
   }
   .modal {
@@ -520,16 +521,7 @@
   left: 60px;
   bottom: 15px;
   display: flex;
-  top: 0;
-  width: 256px;
-}
-.tooltip::after {
-  position: absolute;
-  content: "";
-  background-image: url(../images/modal-window/triangle.svg);
-  top: 6px;
-  width: 19px;
-  height: 9px;
+  top: -13px;
 }
 .tooltip-toggle {
   display: flex;
@@ -547,12 +539,32 @@
   color: #83B3D3;
 }
 .tooltip-text {
+  position: relative;
+  top: 40px;
+  left: -29px;
+}
+.tooltip-text::after {
   position: absolute;
+  content: "";
+  background-image: url(../images/modal-window/triangle.svg);
+  top: -10px;
+  left: 7px;
+  width: 19px;
+  height: 9px;
+}
+.tooltip-paragraph {
+  position: absolute;
+  top: -1px;
+  left: -23px;
   font-size: 16px;
+  margin: 0;
   line-height: 1.25;
-  background-color:#333333;
-  color: #FFFFFF;
+  width: 256px;
   border-radius: 10px;
+  height: 110px;
+  padding: 15px 18px 18px 22px;
+  color: #FFFFFF;
+  background-color:#333333;
 }
 .buttons-number {
   display: flex;
