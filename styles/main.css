@@ -443,7 +443,7 @@
 .quantity {
   display: flex;
   align-items: center;
-  min-height: 48px;
+  height: 48px;
   justify-content: space-between;
   margin-bottom: 48px;
 }
@@ -451,14 +451,13 @@
   display: flex;
   align-items: center;
 }
-
 .quantity-group:first-child label {
   font-size: 20px;
   margin-right: 46px;
 }
-.quantity-group:last-child label {
+.quantity-kids label {
  font-size: 20px;
- margin-right: 82px;
+ margin-right: 10px;
 }
 .form-input {
   width: 31px;
@@ -516,7 +515,24 @@
   background-color: transparent;
   fill: rgba(117, 97, 87, 0.3);
 }
+.tooltip {
+  position: relative;
+  left: 60px;
+  bottom: 15px;
+  display: flex;
+  top: 0;
+  width: 256px;
+}
+.tooltip::after {
+  position: absolute;
+  content: "";
+  background-image: url(../images/modal-window/triangle.svg);
+  top: 6px;
+  width: 19px;
+  height: 9px;
+}
 .tooltip-toggle {
+  display: flex;
   border: none;
   background-color: transparent;
   padding: 0;
@@ -529,6 +545,18 @@
 }
 .tooltip-toggle:hover .tooltip-icon {
   color: #83B3D3;
+}
+.tooltip-text {
+  position: absolute;
+  font-size: 16px;
+  line-height: 1.25;
+  background-color:#333333;
+  color: #FFFFFF;
+  border-radius: 10px;
+}
+.buttons-number {
+  display: flex;
+  align-items: center;
 }
 .button-search {
   border: none;
