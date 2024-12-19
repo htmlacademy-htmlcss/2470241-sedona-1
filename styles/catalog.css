@@ -2,7 +2,8 @@
   background-image: url(../images/background/background-3.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  width: 1200px;
+  max-width: 1200px;
+  max-height: 420px;
   box-sizing: border-box;
   padding: 35px 70px 70px;
   color: #FFFFFF;
@@ -20,6 +21,7 @@
   position: relative;
   column-gap: 28px;
   list-style: none;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
   color: #FFFFFF;
@@ -77,12 +79,14 @@
 .forms {
   display: flex;
   justify-content: space-between;
+  width: 1060px;
 }
 .form-filter {
   display: grid;
   grid-template-columns: 150px 150px;
-  grid-template-rows: 157px;
+  grid-template-rows: minmax(157px) auto;
   column-gap: 70px;
+  max-width: 380px;
   margin: 0 140px 0 0;
   padding: 40px 0 0 0;
 }
@@ -193,7 +197,8 @@
 .form-price {
   display: grid;
   grid-template-columns: 288px 191px;
-  grid-template-rows: 160px;
+  grid-template-rows: minmax(160px) auto;
+  max-width: 600px;
   column-gap: 70px;
   padding-top: 40px;
 }
@@ -216,7 +221,7 @@
   align-items: flex-start;
   column-gap: 2px;
   padding-top: 32px;
-  margin-bottom: 36px;
+  margin-bottom: 48px;
 }
 .price-label {
  position: relative;
@@ -232,7 +237,7 @@
 }
 .price-input {
   outline: none;
-  width: 143px;
+  max-width: 150px;
   font: inherit;
   font-weight: 700;
   box-sizing: border-box;
@@ -346,6 +351,7 @@
 .search-apartments {
   display: flex;
   justify-content: center;
+  align-items: center;
   color:#000000;
   background-color:#FFFFFF
 }
@@ -398,7 +404,7 @@
   border-color: rgba(0, 0, 0, 0.3);
 }
 .view-list {
-  width: 160px;
+  max-width: 170px;
   padding: 0;
   margin: 0;
   list-style: none;
@@ -414,6 +420,7 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
   width: 48px;
   height: 48px;
   border: 2px solid #E5E5E5;
@@ -468,7 +475,7 @@
   height: auto;
 }
 .place-card-title {
-  margin: 0 0 16px 0;
+  margin:16px 0 16px 0;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
@@ -479,7 +486,7 @@
 .sort {
   display: grid;
   grid-template-columns: 140px 140px;
-  grid-template-rows: 21px 36px 37px ;
+  grid-template-rows: minmax(21px, auto) 36px 37px ;
   column-gap: 20px;
   box-sizing: border-box;
   row-gap: 16px;
@@ -550,8 +557,8 @@ figure {
   justify-content: center;
   align-items: center;
   box-sizing: border-box;
-  width: 60px;
-  height: 60px;
+  min-width: 60px;
+  min-height: 60px;
   cursor: pointer;
   color: #FFFFFF;
   outline: none;

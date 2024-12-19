@@ -1,5 +1,5 @@
   .hero {
-    background-image: url("../images/background/background-1.jpg"), url("../images/arrows.svg");
+    background-image: url("../images/background/background-1.jpg");
     background-repeat: no-repeat;
     object-fit: fill;
     height: 485px;
@@ -7,6 +7,21 @@
     color: #000000;
     background-color: #ffffff;
   }
+  .images {
+    position: relative;
+  }
+  .images::after {
+    position: absolute;
+    content: "";
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(../images/arrows.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 1200px;
+    height: 57px;
+}
   .logo {
     display: block;
     margin: 0 auto;
@@ -32,7 +47,9 @@
   .advantages-text {
     width: 651px;
     margin: 0 0 69px 0;
-    padding: 0 274.5px;
+    padding: 0 2745px;
+    font-size: 22px;
+    line-height: 1.18;
     font-weight: 400;
     text-align: center;
     color: #333333;
@@ -42,7 +59,7 @@
     grid-template-columns: repeat(3, 1fr);
     grid-auto-rows: minmax(385px, auto);
     margin: 0;
-    padding: 0;
+    padding: 21px 0 0 0;
     list-style: none;
     text-align: center;
   }
@@ -178,10 +195,8 @@
   .about-heading {
     padding: 64px 0 0 0;
     text-transform: uppercase;
-    margin: 0 0 20px 0;
+    margin: 0;
     width: 505px;
-    padding-left: 347.5px;
-    padding-right: 347.5px;
     font-weight: 700;
     font-size: 30px;
     line-height: 36px;
@@ -368,7 +383,7 @@
   opacity: 0.3;
 }
 .modal-title {
-  margin: 0 0 64px;
+  margin: 0 0 57px;
   font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-size: 30px;
@@ -383,6 +398,8 @@
   display: grid;
   grid-template-columns: 137px 440px;
   grid-auto-rows: minmax(48px, auto);
+  grid-template-rows: minmax(48px, auto) auto;
+  margin: 0 0 23px;
   row-gap: 4px;
 }
 .auth-form label {
@@ -419,8 +436,9 @@
   display: grid;
   grid-template-columns: 137px 440px;
   grid-auto-rows: minmax(48px, auto);
+  grid-template-rows: minmax(48px, auto) auto;
   row-gap: 4px;
-  margin: 0;
+  margin: 0 0 23px;
 }
 .message-room {
   grid-column: 2 / 3;
@@ -458,6 +476,8 @@
 .quantity-kids {
   display: flex;
   align-items: center;
+  margin-left: 88px;
+  margin-right: 40px;
 }
 .quantity-kids label {
  font-size: 20px;
@@ -533,6 +553,7 @@
 .tooltip-icon {
   width: 100%;
   height: 100%;
+  display: block;
   fill: #83B3D3;
 }
 .tooltip-toggle:hover .tooltip-icon {
@@ -543,6 +564,11 @@
   top: 40px;
   left: -3px;
   width: 256px;
+  display: none;
+}
+.tooltip-toggle:hover + .tooltip-text,
+.tooltip-toggle:focus + .tooltip-text {
+  display: block;
 }
 .tooltip-text::after {
   position: absolute;
@@ -556,7 +582,7 @@
 .tooltip-paragraph {
   position: absolute;
   top: 0;
-  left: -41%;
+  left: -44%;
   font-size: 16px;
   margin: 0;
   line-height: 1.25;
