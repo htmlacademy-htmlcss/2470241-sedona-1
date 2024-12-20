@@ -52,6 +52,9 @@ body {
   height: 70px;
   margin-right: 28px;
 }
+.navigation-logo:hover {
+  opacity: 0.3;
+}
 .navigation-logo:focus {
   opacity: 0.4;
 }
@@ -92,6 +95,9 @@ body {
   text-decoration: none;
   color: inherit;
 }
+.navigation-link:hover {
+  opacity: 0.3;
+}
 .navigation-link:focus {
   opacity: 0.4;
 }
@@ -116,6 +122,9 @@ body {
   background-color: transparent;
   border: none;
   cursor: pointer;
+}
+.navigation-button-search:hover {
+  opacity: 0.3;
 }
 .navigation-button-search:focus {
   outline: none;
@@ -217,6 +226,8 @@ body {
   line-height: 20px;
 }
 .button-third {
+  outline: none;
+  border: none;
   padding: 8px 58px;
   font-weight: 700;
   font-size: 16px;
@@ -229,13 +240,11 @@ body {
   background-color: transparent;
 }
 .button-third:focus {
-  border:3px solid #83B3D3;
-  color: #FFFFFF;
+  outline: 3px solid #83B3D3;
   background-color: transparent;
 }
 .button-third:focus-visible {
-  border:3px solid #83B3D3;
-  color: #FFFFFF;
+  outline: 3px solid #83B3D3;
   background-color: transparent;
 }
 .button-third:active {
@@ -352,14 +361,13 @@ body {
 }
 .copyright {
  max-width: 120px;
- margin-left: auto;
  color: #000000;
  text-align: right;
  text-decoration: none;
 }
 .footer-social-list {
  max-width: 150px;
- margin: 0 237px 0 0;
+ margin: 0 auto 0 0;
  padding: 0;
  display: flex;
  flex-wrap: wrap;
