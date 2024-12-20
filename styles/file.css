@@ -20,6 +20,7 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100%;
+  min-width: 1280px;
   font-family: "PT Sans", sans-serif;
   font-size: 22px;
   line-height: 26px;
@@ -51,6 +52,9 @@ body {
   height: 70px;
   margin-right: 28px;
 }
+.navigation-logo:hover {
+  opacity: 0.3;
+}
 .navigation-logo:focus {
   opacity: 0.4;
 }
@@ -65,13 +69,19 @@ body {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
+  max-width: 350px;
   gap: 32px;
   margin: 0 auto 0 0;
   padding: 0;
   list-style: none;
 }
 .navigation-user {
-  max-width: 315px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  max-width: 95px;
   margin-right: 32px;
 }
 .navigation-link {
@@ -84,6 +94,9 @@ body {
   text-align: center;
   text-decoration: none;
   color: inherit;
+}
+.navigation-link:hover {
+  opacity: 0.3;
 }
 .navigation-link:focus {
   opacity: 0.4;
@@ -109,6 +122,9 @@ body {
   background-color: transparent;
   border: none;
   cursor: pointer;
+}
+.navigation-button-search:hover {
+  opacity: 0.3;
 }
 .navigation-button-search:focus {
   outline: none;
@@ -142,6 +158,8 @@ body {
 .button {
   display: inline-block;
   font-family: inherit;
+  box-sizing: border-box;
+  max-width: 376px;
   outline: none;
   padding: 8px 34px;
   border: none;
@@ -208,6 +226,8 @@ body {
   line-height: 20px;
 }
 .button-third {
+  outline: none;
+  border: none;
   padding: 8px 58px;
   font-weight: 700;
   font-size: 16px;
@@ -220,8 +240,11 @@ body {
   background-color: transparent;
 }
 .button-third:focus {
-  border: 3px solid #83B3D3;
-  color: #FFFFFF;
+  outline: 3px solid #83B3D3;
+  background-color: transparent;
+}
+.button-third:focus-visible {
+  outline: 3px solid #83B3D3;
   background-color: transparent;
 }
 .button-third:active {
@@ -326,6 +349,8 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
+  height: 50px;
   padding: 40px 70px 30px;
   margin: 0;
 }
@@ -336,21 +361,20 @@ body {
 }
 .copyright {
  max-width: 120px;
- margin-left: auto;
  color: #000000;
  text-align: right;
  text-decoration: none;
 }
 .footer-social-list {
  max-width: 150px;
- margin: 0 41.5px 0 0;
+ margin: 0 auto 0 0;
  padding: 0;
  display: flex;
  flex-wrap: wrap;
  list-style: none;
  justify-content: center;
  align-items: center;
- column-gap: 26px;
+ column-gap: 28px;
 }
 .footer-social-link {
   display: block;
@@ -383,8 +407,8 @@ body {
   cursor: pointer;
   outline: none;
   max-width: 340px;
-  padding: 0 41.5px;
-  margin: 0 auto;
+  padding: 0;
+  margin: 0 236px 0 0;
   font-style: normal;
   font-weight: 400;
   font-size: 40px;
