@@ -19,7 +19,7 @@
     margin: 0;
   }
   .advantages-heading {
-    width: 620px;
+    width: 630px;
     padding: 69px 290px 0 290px;
     margin: 0 0 25px 0;
     font-size: 30px;
@@ -30,7 +30,7 @@
     color: #000000;
   }
   .advantages-text {
-    width: 651px;
+    width: 655px;
     margin: 0 0 69px 0;
     padding: 0 2745px;
     font-size: 22px;
@@ -90,6 +90,7 @@
     font-size: 18px;
     line-height: 21px;
     text-transform: none;
+    color: #FFFFFF;
   }
   .advantages-item-square,
   .advantages-item-tourist {
@@ -135,7 +136,7 @@
     font-weight: 400;
     font-size: 18px;
     line-height: 21px;
-    color: #000000;
+    color: #333333;
   }
   .advantages-item-road {
     color: #000000;
@@ -169,7 +170,7 @@
     font-weight: 400;
     font-size: 18px;
     line-height: 21px;
-    color: #000000;
+    color: #333333;
   }
   .about {
     display: flex;

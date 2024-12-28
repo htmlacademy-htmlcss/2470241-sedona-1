@@ -2,8 +2,8 @@
   background-image: url(../images/background/background-3.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  max-width: 1200px;
-  max-height: 420px;
+  min-width: 1200px;
+  height: 420px;
   box-sizing: border-box;
   padding: 35px 70px 70px;
   color: #FFFFFF;
@@ -648,7 +648,7 @@
 }
 .newsletter-title {
   margin: 0;
-  width: 404px;
+  width: 410px;
   padding: 0 398px;
   font-weight: 700;
   font-size: 30px;
