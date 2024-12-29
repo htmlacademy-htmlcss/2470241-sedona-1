@@ -3,9 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>Каталог</title>
-    <link rel="icon" href="favicon/favicon.ico">
+    <link rel="icon" href="favicon.ico"/>
+    <link rel="icon" href="images/favicon.png"/>
     <link rel="stylesheet" href="styles/catalog.css">
-    <link rel="stylesheet" href="styles/file.css">
   </head>
   <body>
     <div class="container">
@@ -46,7 +46,6 @@
       </nav>
     </header>
     <main class="main-container main-inner">
-      <div class="page-container">
       <section class="inner-container">
         <h1 class="inner-header-title">Гостиницы Седоны</h1>
         <ul class="breadcrumbs">
@@ -115,7 +114,6 @@
               </li>
             </ul>
           </fieldset>
-      </form>
         </div>
         <div class="form-price">
           <fieldset class="appointment-form">
@@ -144,6 +142,7 @@
             <button class="button button-third" type="reset">Сбросить</button>
           </div>
         </div>
+      </form>
     </div>
       </section>
       <section class="apartments">
@@ -183,7 +182,7 @@
           <span class="place-name">Гостиница</span>
           <span class="price-before">От 4000 ₽</span>
             <a class="button button-more" href="#">подробнее</a>
-            <button class="button button-secondary">в избранное</button>
+            <button class="button button-secondary" type="button">в избранное</button>
           <figure class="marks">
             <img class="mark" src="images/star.svg" width="18" height="17" alt="4 звeзды из 5">
             <img class="mark" src="images/star.svg" width="18" height="17" alt="">
@@ -223,7 +222,7 @@
           <span class="place-name">Гостиница</span>
           <span class="price-before">От 2500 ₽</span>
             <a class="button button-more" href="#">подробнее</a>
-            <button class="button button-secondary">в избранное</button>
+            <button class="button button-secondary" type="button">в избранное</button>
           <figure class="marks">
             <img class="mark" src="images/star.svg" width="18" height="17" alt="3 звeзды из 5">
             <img class="mark" src="images/star.svg" width="18" height="17" alt="">
@@ -241,7 +240,7 @@
           <span class="place-name">Гостиница</span>
           <span class="price-before">От 1500 ₽</span>
             <a class="button button-more" href="#">подробнее</a>
-            <button class="button button-secondary">в избранное</button>
+            <button class="button button-secondary" type="button">в избранное</button>
           <figure class="marks">
             <img class="mark" src="images/star.svg" width="18" height="17" alt="2 звeзды из 5">
             <img class="mark" src="images/star.svg" width="18" height="17" alt="">
@@ -286,12 +285,11 @@
           <label for="user-email">Email</label>
         </div>
           <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="user-email" required>
-          <button class="button button-secondary button-size-large">
+          <button class="button button-secondary button-size-large" type="submit">
             Подписаться
           </button>
         </form>
       </section>
-      </div>
     </main>
     <footer class="page-footer">
       <div class="page-footer-container">
