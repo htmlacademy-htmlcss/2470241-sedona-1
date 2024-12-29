@@ -604,7 +604,7 @@ body {
 .form-price {
   display: grid;
   grid-template-columns: 288px 191px;
-  grid-template-rows: minmax(160px) auto;
+  grid-template-rows: minmax(160px, auto);
   max-width: 600px;
   column-gap: 70px;
   padding-top: 40px;
@@ -1287,7 +1287,6 @@ body {
   outline: none;
   max-width: 340px;
   padding: 0;
-  margin: 0 236px 0 0;
   font-style: normal;
   font-weight: 400;
   font-size: 40px;
