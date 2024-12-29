@@ -478,7 +478,6 @@ body {
 
 .catalog-filter {
   display: flex;
-  column-gap: 70px;
 }
 
 .catalog-filter-group {
